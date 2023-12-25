@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Плавное появление элементов</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <section>
+        <p class="my-paragraph" > .wav </p>
+      </section>
+      <section>
+        <div class="container reveal" style="position: relative; top: -250px;">
+          <h2>О чем проект?</h2>
+          <div class="text-container">
+            <div class="text-box">
+              <h3>о музыке</h3>
+              <p style="font-size: 20px;">
+                Мне кажется, что музыка может сплочать целые страны
+              </p>
+            </div>
+            <div class="text-box">
+              <h3>о звуке</h3>
+              <p style="font-size: 20px;">
+                Каждая нота уникальна, каждый звук неповторим
+              </p>
+            </div>
+            <div class="text-box">
+              <h3>об эмоциях</h3>
+              <p style="font-size: 20px;">
+                Любая музыкальная композиция вызывает эиоции, и это круто
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section>
+
+
+
+        <img src="images/anac.png" id="img1" onclick="changeImg()">
+
+        <script>
+            function changeImg() {
+                let image = document.getElementById ('img1');
+
+                if(image.src.match('images/anac.png')){
+                    image.src = 'images/pesh.png'
+                } else {
+                    image.src = 'images/anac.png'
+                }
+            }
+        </script>
+        <div class="container reveal">
+          <h2>Наши гости</h2>
+          <div class="text-container">
+            <div class="text-box">
+              <h3>Музыканты</h3>
+              <p style="font-size: 30px;">
+                А. Пушной, тот самый из <span style="color: rgb(238, 255, 0); font-size: 50px;">Галилео</span> <br> 
+                <br>
+                И. Погребняк из <span style="color: rgb(238, 255, 0); font-size: 50px;">Anacondaz x Заточка</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section>
+        <div class="container reveal" style="position: relative; left: -500px;">
+          <h2 style="color: black;">Эскиз</h2>
+          <div class="text-container">
+            <div class="text-box">
+              <h3>Персонаж</h3>
+              <p style="font-size: 30px;">
+                Это две палочки, как твикс, левая и правая, только барабанные
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
